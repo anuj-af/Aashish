@@ -12,7 +12,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import PageBanner from "@/components/PageBanner";
-import { supabase, type Manufacturer } from "@/lib/supabase";
+import { getSupabaseClient, type Manufacturer } from "@/lib/supabase";
 import { Info, AlertCircle, Loader2 } from "lucide-react";
 
 export default function InfoPage() {
@@ -23,6 +23,7 @@ export default function InfoPage() {
   useEffect(() => {
     async function fetchManufacturers() {
       try {
+        const supabase = getSupabaseClient();
         const { data, error } = await supabase
           .from("manufacturers")
           .select("*")

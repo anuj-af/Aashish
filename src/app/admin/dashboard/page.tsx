@@ -25,7 +25,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
-import { supabase, type Manufacturer } from "@/lib/supabase";
+import { getSupabaseClient, type Manufacturer } from "@/lib/supabase";
 import {
   Plus,
   Pencil,
@@ -65,6 +65,7 @@ export default function AdminDashboard() {
     setLoading(true);
     setError(null);
     try {
+      const supabase = getSupabaseClient();
       const { data, error } = await supabase
         .from("manufacturers")
         .select("*")
@@ -87,6 +88,7 @@ export default function AdminDashboard() {
     setSaving(true);
     setError(null);
     try {
+      const supabase = getSupabaseClient();
       if (editingId) {
         const { error } = await supabase
           .from("manufacturers")
@@ -112,6 +114,7 @@ export default function AdminDashboard() {
     if (!deletingId) return;
     setSaving(true);
     try {
+      const supabase = getSupabaseClient();
       const { error } = await supabase
         .from("manufacturers")
         .delete()
