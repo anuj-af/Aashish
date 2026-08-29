@@ -192,8 +192,8 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
-              { name: "Founder", role: "Co-Founder & Director", image: "/images/founder1.jpeg" },
-              { name: "Founder", role: "Co-Founder & Director", image: "/images/founder2.jpeg" },
+              { name: "Ashish Jain", role: "Founder", image: "/images/founder1.jpeg" },
+              { name: "Nitin Jain", role: "Co-Founder", image: "/images/founder2.jpeg" },
             ].map((person, i) => (
               <Card key={i} className="border-none shadow-lg overflow-hidden group">
                 <div className="h-80 overflow-hidden">

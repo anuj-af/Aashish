@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -160,9 +161,13 @@ export default function AdminDashboard() {
       <header className="bg-[#1B3C73] shadow-lg">
         <div className="container mx-auto px-4 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
-            </div>
+            <Image
+              src="/images/logo.jpeg"
+              alt="Aashish Logo"
+              width={36}
+              height={36}
+              className="h-9 w-auto rounded-md"
+            />
             <div className="flex items-center gap-2">
               <LayoutDashboard className="h-5 w-5 text-blue-200" />
               <span className="text-white font-semibold">Admin Dashboard</span>

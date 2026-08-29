@@ -41,7 +41,7 @@ const products: Product[] = [
   {
     name: "Milk Powder",
     desc: "Premium quality milk powder for all your dairy needs. Rich and creamy.",
-    image: "/images/ghee.jpeg",
+    image: "/images/logo.jpeg",
     category: "coming-soon",
     size: "TBA",
     comingSoon: true,
@@ -49,7 +49,7 @@ const products: Product[] = [
   {
     name: "Butter",
     desc: "Fresh, creamy butter made from pure milk. Perfect for cooking and spreading.",
-    image: "/images/ghee.jpeg",
+    image: "/images/logo.jpeg",
     category: "coming-soon",
     size: "TBA",
     comingSoon: true,
@@ -57,7 +57,7 @@ const products: Product[] = [
   {
     name: "Fresh Cream",
     desc: "Rich and velvety fresh cream for your culinary delights. 100% natural.",
-    image: "/images/ghee.jpeg",
+    image: "/images/logo.jpeg",
     category: "coming-soon",
     size: "TBA",
     comingSoon: true,

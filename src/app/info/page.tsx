@@ -64,7 +64,7 @@ export default function InfoPage() {
                 <p className="text-blue-200/80 text-sm leading-relaxed">
                   To identify the manufacturing unit address, please refer the first character of
                   batch number. For Ice Cream products, refer the first character of batch no. For
-                  products other than ice cream, refer the first 2 characters of batch no.
+                  products other than ice cream, refer the last 2 characters of batch no.
                 </p>
               </div>
             </CardContent>

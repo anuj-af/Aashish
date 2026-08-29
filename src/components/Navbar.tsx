@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
@@ -26,15 +27,13 @@ export default function Navbar() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative">
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-white font-extrabold text-xl tracking-wide">Aashish</span>
-            <span className="text-blue-200 text-[10px] -mt-1 tracking-wider">Nature&apos;s Best in Every Spoon</span>
-          </div>
+          <Image
+            src="/images/logo.jpeg"
+            alt="Aashish Logo"
+            width={48}
+            height={48}
+            className="h-12 w-auto rounded-lg"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -61,7 +60,7 @@ export default function Navbar() {
             className="rounded-full border-white/30 bg-white/10 text-white hover:bg-white hover:text-[#1B3C73] gap-2 px-6"
           >
             <Phone className="h-4 w-4" />
-            9009200014
+            +919424345000
           </Button>
         </div>
 
@@ -96,7 +95,7 @@ export default function Navbar() {
                 className="w-full rounded-full border-white/30 bg-white/10 text-white hover:bg-white hover:text-[#1B3C73] gap-2"
               >
                 <Phone className="h-4 w-4" />
-                9009200014
+                +919424345000
               </Button>
             </div>
           </SheetContent>

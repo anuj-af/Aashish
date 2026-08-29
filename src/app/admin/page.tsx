@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -36,9 +37,13 @@ export default function AdminLoginPage() {
         <CardHeader className="text-center pb-2">
           {/* Logo */}
           <div className="mx-auto mb-4">
-            <div className="w-16 h-16 rounded-full bg-[#1B3C73] flex items-center justify-center mx-auto">
-              <span className="text-white font-bold text-2xl">A</span>
-            </div>
+            <Image
+              src="/images/logo.jpeg"
+              alt="Aashish Logo"
+              width={80}
+              height={80}
+              className="h-20 w-auto mx-auto rounded-xl"
+            />
           </div>
           <CardTitle className="text-2xl font-extrabold text-[#0F2847]">
             Admin Login
