@@ -60,7 +60,7 @@ export default function Navbar() {
             className="rounded-full border-white/30 bg-white/10 text-white hover:bg-white hover:text-[#1B3C73] gap-2 px-6"
           >
             <Phone className="h-4 w-4" />
-            +919424345000
+            +91 9424345000, 9009200014
           </Button>
         </div>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
                 className="w-full rounded-full border-white/30 bg-white/10 text-white hover:bg-white hover:text-[#1B3C73] gap-2"
               >
                 <Phone className="h-4 w-4" />
-                +919424345000
+                +91 9424345000, 9009200014
               </Button>
             </div>
           </SheetContent>

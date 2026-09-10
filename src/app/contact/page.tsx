@@ -67,7 +67,7 @@ export default function ContactPage() {
                   {
                     icon: Phone,
                     title: "Phone",
-                    info: "+919424345000",
+                    info: "+91 9424345000, 9009200014",
                   },
                   {
                     icon: Mail,
@@ -220,7 +220,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Phone, title: "Give Us A Call", info: "+919424345000" },
+              { icon: Phone, title: "Give Us A Call", info: "+91 9424345000, 9009200014" },
               { icon: Mail, title: "Email Address", info: "impexaashish@gmail.com" },
               { icon: MapPin, title: "Office Location", info: "Siyaganj, Indore (M.P.)" },
               { icon: Clock, title: "Work Hours", info: "Mon-Sat: 9AM - 6PM" },
