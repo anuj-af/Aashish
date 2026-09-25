@@ -62,7 +62,7 @@ export default function InfoPage() {
               <div>
                 <h3 className="font-semibold text-sm mb-1">Note</h3>
                 <p className="text-blue-200/80 text-sm leading-relaxed">
-                  To identify the manufacturing unit address, please refer the last 2 character of batch number.
+                  To identify the manufacturing unit address, please refer the first 2 character of batch number.
                 </p>
               </div>
             </CardContent>
